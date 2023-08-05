@@ -1,8 +1,8 @@
 [![license](https://img.shields.io/badge/License-MIT-purple.svg?style=?style=flat-square)](LICENSE) [![database](https://img.shields.io/badge/-14.16.0-white.svg?style=?style=flat-square&logo=node.js)](DATABASE) [![database](https://img.shields.io/badge/Build-Success-brightgreen.svg?style=?style=flat-square&logo=appveyor&logo=mysql)](BUILD)
 
-# JavaScript Code Test (Nuxt.js/Next.js)
+# To-Do App
 
-This is a simple test to evaluate your skills in JavaScript and Nuxt.js/Next.js.
+Build a to-do app.
 
 ## Instructions
 
