@@ -6,21 +6,21 @@ Build a to-do app.
 
 ## Instructions
 
-1. Fork this repository
-2. Create a new branch with your name
-3. Complete the test
-4. Push your changes to your forked repository
-5. Send us the link to your forked repository
+1. Clone the repository.
+2. Install and run the backend server.
+3. Complete all requirements.
+4. Submit your project.
 
-*P.S. dot not forget to commit your changes.*
+*P.S. Do not forget to commit your changes.*
 
 ## Test Duration
 
-- 2 hours and 30 minutes
+- 2 days
 
 ## Prerequisites
 
 - Node.js (v14 LTS or higher)
+- Angular (v16)
 
 ## Run the backend server
 
