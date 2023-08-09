@@ -18,6 +18,7 @@ export class AppComponent {
   hash = localStorage.getItem("hash") || "";
 
   ngOnInit(){
+
     this.http.getTodos(this.hash).pipe(
 
       catchError((err:HttpErrorResponse)=>{
@@ -34,6 +35,7 @@ export class AppComponent {
       this.router.navigate(['/todo']);
   
     });
+    
   }
 
   
