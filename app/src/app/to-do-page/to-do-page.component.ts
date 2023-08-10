@@ -19,6 +19,8 @@ export class ToDoPageComponent {
 
   user = {avatar: "", id: 0, name: "", username: ""};
 
+  modal = false;
+
   @ViewChild('taskInput') taskInput:ElementRef|undefined;
 
   ngOnInit(){
@@ -36,9 +38,10 @@ export class ToDoPageComponent {
 
     this.http.addTask(task).subscribe((response:task) => { 
       this.tasks.push(response);
+      this.modal= false;
     });
 
-
+    
   }
 
   complete(i:number){
@@ -62,11 +65,16 @@ export class ToDoPageComponent {
     
   }
 
+  logout(){
+    localStorage.setItem("hash","");
+    this.router.navigate(['/login']);
+  }
+
 
 
   checkIfLoggedIn(){
 
-    const hash = localStorage.getItem("hash") || "";
+    const hash = localStorage.getItem("hash") || "no";
 
     this.http.getTodos(hash).pipe(
 

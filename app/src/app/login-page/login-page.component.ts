@@ -67,7 +67,6 @@ export class LoginPageComponent {
 
       localStorage.setItem("hash" , hash);
       localStorage.setItem("user" , JSON.stringify(this.users[this.choosedUser]))
-      localStorage.setItem("list" , JSON.stringify(response))
       this.router.navigate(['/todo']);
 
     });

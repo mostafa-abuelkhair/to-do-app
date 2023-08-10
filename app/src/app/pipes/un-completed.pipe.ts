@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 type task = {completed: boolean, id: number, task: string, user_id: number}
 
 @Pipe({
-  name: 'unCompleted'
+  name: 'unCompleted',
+  pure: false
 })
 export class UnCompletedPipe implements PipeTransform {
 

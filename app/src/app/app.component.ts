@@ -15,7 +15,7 @@ export class AppComponent {
 
   title = 'to-do';
 
-  hash = localStorage.getItem("hash") || "";
+  hash = localStorage.getItem("hash") || "no";
 
   ngOnInit(){
 
@@ -31,7 +31,6 @@ export class AppComponent {
     )
     .subscribe((response:any) => { 
   
-      localStorage.setItem("list" , JSON.stringify(response))
       this.router.navigate(['/todo']);
   
     });
